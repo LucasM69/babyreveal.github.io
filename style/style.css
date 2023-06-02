@@ -1,0 +1,41 @@
+html, body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.game-container {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scratch-canvas {
+    z-index: 99;
+    height: 99%;
+    width: 99%;
+    position: absolute;
+    cursor: crosshair;
+}
+
+.scratch-container, .name-reveal-container, .date-reveal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.scratch-container {
+    height: 20vh;
+}
+
+.name-reveal-container {
+    font-family: 'Nova Quinta PERSONAL USE', sans-serif;
+    font-size: 5em;
+    color: pink;
+    height: 100%;
+    width: 100%;
+}
+
+.date-reveal-container {
+    height: 10vh;
+}

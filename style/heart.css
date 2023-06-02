@@ -1,0 +1,49 @@
+.heart {
+  /* TODO Arranger avec les média queries */
+  width: 60px;
+  height: 60px;
+  transform: rotate(45deg) translate(10px, 10px);
+}
+
+.heart::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  top: -50%;
+  left: 0;
+  border-radius: 50%;
+}
+
+.heart::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  bottom: 0%;
+  right: 50%;
+  border-radius: 50%;
+}
+
+@media (min-width: 425px) {
+  .heart {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media (min-width: 576px) {
+  .heart {
+    width: 85px;
+    height: 85px;
+  }
+}
+
+@media (min-width: 768px) {
+  .heart {
+    width: 100px;
+    height: 100px;
+  }
+}
